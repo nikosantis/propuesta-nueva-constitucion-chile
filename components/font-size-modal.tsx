@@ -1,11 +1,17 @@
 import { FontSizeType, useReader } from 'lib/contexts/reader-context'
 import Modal, { ModalProps } from './modal'
 
-const numberToFont: Record<string, FontSizeType> = {
-  1: 'sm',
-  2: 'base',
-  3: 'lg',
-  4: 'xl'
+const numberToFont: Record<FontSizeType, string> = {
+  base: '2',
+  sm: '1',
+  lg: '3',
+  xl: '4'
+}
+const fontToNumber: Record<string, FontSizeType> = {
+  '2': 'base',
+  '1': 'sm',
+  '3': 'lg',
+  '4': 'xl'
 }
 
 export default function FontSizeModal({
@@ -35,7 +41,7 @@ export default function FontSizeModal({
           min={1}
           max={4}
           step={1}
-          onChange={e => changeFontSize(numberToFont[e.target.value])}
+          onChange={e => changeFontSize(fontToNumber[e.target.value])}
         />
       </div>
     </Modal>

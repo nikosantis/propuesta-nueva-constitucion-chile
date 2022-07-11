@@ -10,7 +10,7 @@ export default function HomeButton() {
         }
       }}
     >
-      <BiHomeAlt className='dark:text-white text-slate-900 transition-colors' />
+      <BiHomeAlt className='dark:text-white text-slate-900 lg:text-slate-200 transition-colors' />
     </button>
   )
 }
