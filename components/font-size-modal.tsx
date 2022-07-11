@@ -4,15 +4,8 @@ import Modal, { ModalProps } from './modal'
 const numberToFont: Record<string, FontSizeType> = {
   1: 'sm',
   2: 'base',
-  3: 'xl',
-  4: '2xl'
-}
-
-const fontToNumber: Record<FontSizeType, string> = {
-  sm: '1',
-  base: '2',
-  xl: '3',
-  '2xl': '4'
+  3: 'lg',
+  4: 'xl'
 }
 
 export default function FontSizeModal({
@@ -38,7 +31,7 @@ export default function FontSizeModal({
           type='range'
           className='appearance-none w-full bg-blue-500 rounded-md h-[3px]'
           id='customRange1'
-          value={fontToNumber[fontSize]}
+          value={numberToFont[fontSize]}
           min={1}
           max={4}
           step={1}
