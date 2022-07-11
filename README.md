@@ -21,6 +21,7 @@ Este sitio web no es oficial, sino que es un sitio de código abierto, creado pa
 ## Autores
 
 - Nikolas Santis ([@nikosantise](https://twitter.com/nikosantise))
+- Nikolas Santis2 ([@nikosantise](https://twitter.com/nikosantise2))
 
 <br />
 ## Licencia
