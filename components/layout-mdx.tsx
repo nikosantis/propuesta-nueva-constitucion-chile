@@ -16,14 +16,36 @@ export default function LayoutMdx({ children }: LayoutMdxProps) {
       <NextSeo
         title='Propuesta Constitución Política de la República de Chile'
         description='Sitio para leer la Propuesta Constitución Política de la República de Chile.'
+        canonical='https://propuesta-nueva-constitucion-chile.vercel.app/'
+        openGraph={{
+          type: 'website',
+          locale: 'es_ES',
+          site_name:
+            'Leer la Propuesta Constitución Política de la República de Chile',
+          url: 'https://propuesta-nueva-constitucion-chile.vercel.app/',
+          title:
+            'Sitio Web para leer la Propuesta Constitución Política de la República de Chile',
+          description:
+            'Sitio para leer la Propuesta Constitución Política de la República de Chile.',
+          images: [
+            {
+              url: 'https://propuesta-nueva-constitucion-chile.vercel.app/nv-og.png',
+              width: 1200,
+              height: 627,
+              alt: 'Sitio para leer la Propuesta Constitución Política de la República de Chile.',
+              type: 'image/png'
+            }
+          ]
+        }}
+        twitter={{
+          handle: '@nikosantise',
+          cardType: 'summary_large_image'
+        }}
       />
       <div className='w-full h-full scroll-smooth'>
         <div className='min-h-[calc(100vh-48px)] lg:min-h-screen h-full'>
           <Header />
-          <main
-            className='mx-auto bg-white dark:bg-slate-900 transition-colors'
-            role='main'
-          >
+          <main className='mx-auto' role='main'>
             <Content>{children}</Content>
           </main>
         </div>

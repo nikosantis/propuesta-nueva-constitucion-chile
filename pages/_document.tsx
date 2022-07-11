@@ -24,7 +24,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='es'>
         <Head>
           <link
             href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'
@@ -56,7 +56,7 @@ class MyDocument extends Document {
           <meta name='msapplication-TileColor' content='#47127d' />
           <meta name='theme-color' content='#47127d' />
         </Head>
-        <body>
+        <body className='bg-white dark:bg-slate-900 transition-colors'>
           <Main />
           <NextScript />
         </body>
