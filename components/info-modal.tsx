@@ -13,7 +13,9 @@ export default function InfoModal({
         <p className='text-sm'>
           Repositorio público:{' '}
           <strong>
-            <a href='https://github.com'>Github</a>
+            <a href='https://github.com/nikosantis/propuesta-nueva-constitucion-chile'>
+              Github
+            </a>
           </strong>
         </p>
       </div>
